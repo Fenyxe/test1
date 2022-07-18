@@ -1,0 +1,26 @@
+//Create a function that will return the difference between the largest and smallest values present in the array.
+
+function rangeOfAnArray(){
+	var array = [9, 3, -3, -9, 11, -6, 5, 10, -9, 1];
+	var smallest = array[0];
+	var largest = array[0];
+	
+	    for (var i =1; i < array.length ; i++){
+	        if ( array [i] < smallest ){
+	            smallest = array [i];
+	        } 
+	        if ( array [i] > largest ){
+	            largest = array [i];
+	        }
+	   }
+	   
+	   console.log (smallest);
+	   console.log (largest);
+	   
+	   var dif = largest - smallest;
+	   console.log (dif);
+
+	return dif; 
+}
+rangeOfAnArray()
+
